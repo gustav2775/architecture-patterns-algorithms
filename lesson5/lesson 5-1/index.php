@@ -1,7 +1,11 @@
 <?php
 
 $user = new User('Вася','vasy@mail.ru',79203452045);
-$massege ='привет саша';
+$massege = 'привет саша';
+$title = 'Приветственное письмо';
 
-new Sms(new Massege($massege,$user));
-new Email(new Massege($massege,$user));
+$sms = new Sms(new Massege($title,$massege,$user));
+$email = new Email(new Massege($title,$massege,$user));
+
+$sms->sentMassege();
+$email->sentMassege();
