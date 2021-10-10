@@ -9,7 +9,7 @@ use App\Interfaces\ISquare;
 abstract class SquareContract implements ISquare {
     protected $adapter;
 
-    public function __constructor ($adapter) {
+    public function __construct ($adapter) {
         $this->adapter = $adapter;
     }
 
