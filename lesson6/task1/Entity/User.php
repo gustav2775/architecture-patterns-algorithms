@@ -24,8 +24,8 @@ class User implements SplSubject
        return $this->email;
     }
 
-    public function notification($notification)
+    public function notification($vacancy_name)
     {
-        $this->messenger->set_email($this->email)
+        $this->messenger->set_email($this->email,$vacancy_name)
     }
 }

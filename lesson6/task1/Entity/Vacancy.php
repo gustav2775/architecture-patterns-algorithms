@@ -4,7 +4,7 @@ namespace App\Entity;
 
 class Vacancy
 {
-    private $observer;
+    private $observers;
     private $vacancy_name;
     
     public function __construct(string $vacancy_name)
@@ -24,7 +24,7 @@ class Vacancy
     public function notify()
     {
         foreach ($this->observers as $observer) {
-            $observer->update($this);
+            $observer->update($this, $vacancy_name);
         }
     }
 

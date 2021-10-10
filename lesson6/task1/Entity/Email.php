@@ -18,6 +18,6 @@ class Email extends Decorator{
     }
     public function notification ($email)
     {
-        echo 'получатель: ' . $email . $messege
+        echo 'получатель: ' . $email . $vacancy_name . $messege
     }
 }

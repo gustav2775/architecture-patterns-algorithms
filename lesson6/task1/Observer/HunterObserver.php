@@ -6,8 +6,8 @@ use SplObserver;
 
 class HunterObserver implements SplObserver
 {
-    public function update(SplSubject $subject)
+    public function update(SplSubject $subject,$vacancy_name)
     {
-        $this->subject->notification();
+        $this->subject->notification($vacancy_name);
     }
 }
