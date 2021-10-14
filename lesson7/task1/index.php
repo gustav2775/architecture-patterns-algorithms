@@ -1,8 +1,9 @@
 <?php
-namespace App;
 
-spl_autoload_register(function ($className) {
-    $className = str_replace("\\", DIRECTORY_SEPARATOR, $className);
-    $className = preg_replace('/App/', '', $className);
-    require_once __DIR__ . $className . '.php';
-});
+// Фронт контроллер в приложение Kernel
+// взаимодействует с классами в  config 
+// use Controller\MainController;
+// use Controller\OrderController;
+// use Controller\ProductController;
+// use Symfony\Component\Routing\RouteCollection;
+// use Symfony\Component\Routing\Route;
