@@ -1,10 +1,12 @@
 <?php
+
 namespace Conract;
 
-class Decorator implements ISentMassege{
+abstract class Decorator implements ISentMassege{
     protected $massege;
 
-    public function __constructor(string $text){
+    public function __construct(string $text){
         $this->massege = $massege;
     }
+    abstract public function sentMassege();
 }

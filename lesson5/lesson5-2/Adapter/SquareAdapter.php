@@ -9,7 +9,7 @@ use App\Contract\SquareContract;
 class SquareAdapter extends SquareContract {
     protected $adapter;
 
-    public function __constructor ($adapter) {
+    public function __construct ($adapter) {
         $this->adapter = $adapter;
     }
     public function squareArea(int $circumference){

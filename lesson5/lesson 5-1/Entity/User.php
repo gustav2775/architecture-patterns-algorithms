@@ -3,7 +3,7 @@ class User implements Decorator {
     protected $user_name;
     protected $email;
     protected $phone_number;
-    public function __constructor(string $user_name, string $email, int $phone_number){
+    public function __construct(string $user_name, string $email, int $phone_number){
         $this->user_name = $user_name;
         $this->email = $email;
         $this->phone_number = $phone_number;
